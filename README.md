@@ -18,7 +18,7 @@ python PATH_TO_REP/main.py PATH_TO_REP/instances/la21 400 400 8 plot_to_file PAT
 You should see a similar result in the folder schedules:
 
 <p align="center">
-  <img src="https://github.com/notafrancescodavid/Job-Shop-Scheduling-Problem---Hierarchical-Parallel-and-easy-to-use-Genetic-Algorithm/blob/08df9a023174c2b93d2993f69958ed82be7fa549/schedules/la21.png" width="600" title="hover text">
+  <img src="https://github.com/notafrancescodavid/Job-Shop-Scheduling-Problem---Hierarchical-Parallel-and-easy-to-use-Genetic-Algorithm/blob/08df9a023174c2b93d2993f69958ed82be7fa549/schedules/la21.png" title="hover text">
 </p>
 
 ### Prerequisites

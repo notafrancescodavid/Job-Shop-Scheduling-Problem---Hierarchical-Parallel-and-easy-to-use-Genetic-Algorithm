@@ -1,5 +1,11 @@
 # Job-Shop-Scheduling-Problem---Hierarchical-Parallel-and-easy-to-use-Genetic-Algorithm
-This repository provides a solution to the Job Shop Scheduling Problem. The proposed algorithm runs on parallel on multicore computers and gives as output a schedule as solution
+This repository provides a solution to the Job Shop Scheduling Problem. The proposed algorithm runs parallel on multicore computers (and single-core) and gives as output a schedule as solution.
+
+The algorithm is formed by a tree of smaller genetic algorithms which over generations pass the best solutions to the children till the root that gets the best results. The Job Shop Scheduling Problem is NP-Hard. And requires optimization algorithms like the one implemented in this repository to obtain pseudo-optimal soluutions.
+
+<p align="center">
+  <img src="https://github.com/notafrancescodavid/Job-Shop-Scheduling-Problem---Hierarchical-Parallel-and-easy-to-use-Genetic-Algorithm/blob/cc3d9dca809b5f13788536771d1c1b817bb70c13/img/tree_structure.png" width="350" title="hover text">
+</p>
 
 ## Getting Started
 
@@ -8,6 +14,12 @@ Clone the repository, then launch the following command from the terminal:
 ```
 python PATH_TO_REP/main.py PATH_TO_REP/instances/la21 400 400 8 plot_to_file PATH_TO_REPOSITORY/schedules/la21.png
 ```
+
+You should see a similar result in the folder schedules:
+
+<p align="center">
+  <img src="https://github.com/notafrancescodavid/Job-Shop-Scheduling-Problem---Hierarchical-Parallel-and-easy-to-use-Genetic-Algorithm/blob/08df9a023174c2b93d2993f69958ed82be7fa549/schedules/la21.png" width="350" title="hover text">
+</p>
 
 ### Prerequisites
 
@@ -67,10 +79,10 @@ Where:
 - ATTR_PLOT, (optional): can assume two values "plot" or "plot_to_file". If the first is chosen a plot of the result is shown. The second requires to specify the path where the schedule result is stored as an image
 - PATH_TO_REP/schedules/INPUT_INSTANCE.png (required only if ATTR_PLOT is "plot_to_file"), it is the path where the image of the result is stored.
 
-IN BOTH CASES, RUNNING FROM CODE OR COMMAND LINE, IT IS NEEDED TO USE A FILE AS INPUT.
+IN BOTH CASES (FROM CODE OR COMMAND LINE) IT IS NEEDED TO USE A FILE AS INPUT.
 
 ### Input file structure
-To understand the structure that the input file must have let's see an example (you can find this example in /instances/la21)
+To understand the structure that the input file MUST have let's see an example (you can find this example in /instances/la21)
 ```
 15 10
 2 34 3 55 5 95 9 16 4 21 6 71 0 53 8 52 1 21 7 26
@@ -92,7 +104,7 @@ To understand the structure that the input file must have let's see an example (
 15 is the number of jobs that have to be executed on the machines. Each job is formed by several tasks. Each task has a time of execution and is executed on a single machine.
 10 is the number of machines
 
-- The input matrix is 15x10, BUT EVERY element of the matrix is actually a task represented by a couple of elements. For example element [0][0] is (2,34) or element [1][1] is (2,31).
+- The input matrix is 15x10, but every element of the matrix is actually a task represented by a couple of elements. For example element [0][0] is (2,34) or element [1][1] is (2,31).
 - The first number of the couple (in the examples is 2) represents the ID of the machine where the task runs, in fact by seeing the example above this number goes from 0 to 9 (that is 10 machines uniques IDs).
 - The second number is the time the task that runs on the machine. In the example a task, represented by the index [0][0] belonging to the first job, runs on machine 2 and requires 34 minutes.
 

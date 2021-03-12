@@ -11,7 +11,7 @@ The algorithm is formed by a tree of smaller genetic algorithms which over gener
 
 Clone the repository, then launch the following command from the terminal:
 
-```
+```batch
 python PATH_TO_REP/main.py PATH_TO_REP/instances/la21 400 400 8 plot_to_file PATH_TO_REPOSITORY/schedules/la21.png
 ```
 
@@ -34,7 +34,7 @@ You can install them by installing Anaconda, or if you prefer there are plenty o
 The algorithm can be used from source code or from the command line:
 
 From source code
-```
+```python
 from treeGA import TreeGA
 
 fileInstanceName = PATH_TO_REP/instances/INPUT_INSTANCE

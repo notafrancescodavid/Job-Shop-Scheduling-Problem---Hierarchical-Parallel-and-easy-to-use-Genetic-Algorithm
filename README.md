@@ -79,7 +79,7 @@ Where:
 - ATTR_PLOT, (optional): can assume two values "plot" or "plot_to_file". If the first is chosen a plot of the result is shown. The second requires to specify the path where the schedule result is stored as an image
 - PATH_TO_REP/schedules/INPUT_INSTANCE.png (required only if ATTR_PLOT is "plot_to_file"), it is the path where the image of the result is stored.
 
-IN BOTH CASES (FROM CODE OR COMMAND LINE) IT IS NEEDED TO USE A FILE AS INPUT.
+IN BOTH CASES (FROM CODE OR COMMAND LINE) YOU NEED TO USE A FILE AS INPUT, THE STRUCTURE OF THE INPUT FILE IS SHOWN BELOW.
 
 ### Input file structure
 To understand the structure that the input file MUST have let's see an example (you can find this example in /instances/la21)
@@ -108,7 +108,7 @@ To understand the structure that the input file MUST have let's see an example (
 - The first number of the couple (in the examples is 2) represents the ID of the machine where the task runs, in fact by seeing the example above this number goes from 0 to 9 (that is 10 machines uniques IDs).
 - The second number is the time the task that runs on the machine. In the example a task, represented by the index [0][0] belonging to the first job, runs on machine 2 and requires 34 minutes.
 
-YOU MUST FOLLOW THE SAME INPUT SHAPE AND FILE STRUCTURE, OR CHANGE THE SOURCE CODE IN TreeGA CLASS IF YOU PREFER.
+- ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) `YOU MUST FOLLOW THE SAME INPUT SHAPE AND FILE STRUCTURE, OR CHANGE THE SOURCE CODE IN TreeGA CLASS IF YOU PREFER.`
 
 ### Running tests on some benchmark input data
 Examples of input files can be found under the "instances" directory. The instances.json has the list of all benchmark for the input files that can be used to test the algorithm. The benchmarks of the pseudo-optimal values ever obtained by other algorithms are available in this file.

@@ -28,7 +28,7 @@ You need:
 - numpy
 - matplotlib
 
-You can install them by installing Anaconda, or if you prefer there are plenty of guides online that explain how to install them
+You can install them by installing Anaconda, or if you prefer there are plenty of tutorials online that explain how to install them
 
 ### How to use the algorithm:
 The algorithm can be used from source code or from the command line:

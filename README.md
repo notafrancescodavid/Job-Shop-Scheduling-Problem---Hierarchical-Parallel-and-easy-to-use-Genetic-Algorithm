@@ -1,7 +1,7 @@
 # Job-Shop-Scheduling-Problem---Hierarchical-Parallel-and-easy-to-use-Genetic-Algorithm
 This repository provides a solution to the Job Shop Scheduling Problem. The proposed algorithm runs parallel on multicore computers (and single-core) and gives as output a schedule as solution.
 
-The algorithm is formed by a tree of smaller genetic algorithms which over generations pass the best solutions to the children till the root that gets the best results. The Job Shop Scheduling Problem is NP-Hard. And requires optimization algorithms like the one implemented in this repository to obtain pseudo-optimal soluutions.
+The algorithm is formed by a tree of smaller genetic algorithms which over generations pass the best solutions to the children till the root that gets the best results. The Job Shop Scheduling Problem is NP-Hard. And requires optimization algorithms like the one implemented in this repository to obtain pseudo-optimal solutions.
 
 <p align="center">
   <img src="https://github.com/notafrancescodavid/Job-Shop-Scheduling-Problem---Hierarchical-Parallel-and-easy-to-use-Genetic-Algorithm/blob/cc3d9dca809b5f13788536771d1c1b817bb70c13/img/tree_structure.png" width="350" title="hover text">

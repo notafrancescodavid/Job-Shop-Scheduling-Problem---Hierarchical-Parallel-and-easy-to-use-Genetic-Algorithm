@@ -57,7 +57,7 @@ bestSolution = treeGA.getBestSolution()
 bestMachineSchedules = treeGA.getBestSolutionMachineSchedules()
 bestJobTimings = treeGA.getBestSolutionJobTimings()
 
-# THE MAKESPAN IS THE TIME THE ENTIRE SCHEDULE NEEDS TO BE RUN, THE LOWER IT IS THE BETTER THE RESULT
+# THE MAKESPAN IS THE FINAL SOLUTION SCORE OF THE ALGORITHM. IT REPRESENTS TIME THE SCHEDULE NEEDS TO RUN ON THE MACHINES. THE LOWER IT IS THE BETTER THE RESULT.
 print("Minimum Makespan:")
 print(minimumMakespan)
 

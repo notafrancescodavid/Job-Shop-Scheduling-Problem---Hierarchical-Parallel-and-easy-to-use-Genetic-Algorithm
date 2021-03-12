@@ -105,6 +105,7 @@ To understand the structure that the input file MUST have let's see an example (
 10 is the number of machines
 
 - The input matrix is 15x10, but every element of the matrix is actually a task represented by a couple of elements. For example element [0][0] is (2,34) or element [1][1] is (2,31).
+- Each row of the matrix is a set of tasks representing a single Job. For example the first row represents Job-0
 - The first number of the couple (in the examples is 2) represents the ID of the machine where the task runs, in fact by seeing the example above this number goes from 0 to 9 (that is 10 machines uniques IDs).
 - The second number is the time the task that runs on the machine. In the example a task, represented by the index [0][0] belonging to the first job, runs on machine 2 and requires 34 minutes.
 
